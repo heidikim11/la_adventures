@@ -1,4 +1,5 @@
 LaAdventures::Application.routes.draw do
+  match "/" => 'adventures#index', :as => "root"
   resources :adventures
 
 
