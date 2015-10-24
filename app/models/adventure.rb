@@ -1,3 +1,4 @@
 class Adventure < ActiveRecord::Base
-  attr_accessible :description, :name, :picture, :visit
+	mount_uploader :picture, PictureUploader
+  	attr_accessible :description, :name, :picture, :visit
 end
